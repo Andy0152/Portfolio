@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes créations graphiques | Andy Yao</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .gallery-page {
+            padding: 70px 8%;
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .gallery-item img {
+            display: block;
+            width: 100%;
+            height: 320px;
+            object-fit: contain;
+            background: #f3f3f3;
+            border-radius: 12px;
+        }
+
+        .gallery-item h3 {
+            margin-top: 12px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 700px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 450px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="gallery-page">
+        <a href="index.html#projets" class="back-link">
+            ← Retour aux projets
+        </a>
+
+        <header class="gallery-header">
+            <p class="eyebrow">MON UNIVERS CRÉATIF</p>
+            <h1>Mes créations graphiques</h1>
+            <p>Découvrez mes affiches, visuels publicitaires et autres réalisations.</p>
+        </header>
+
+        <section class="gallery-grid">
+
+            <article class="gallery-item">
+                <img src="images/crayon.png"
+                     alt="Création graphique au crayon">
+                <h3>Création graphique</h3>
+            </article>
+            
+<article class="gallery-item">
+    <img src="affiche jpg 1.png"
+         alt="Affiche publicitaire">
+    <h3>Affiche publicitaire</h3>
+</article>
+
+
+<article class="gallery-item">
+    <img src="affiche jpg 2.png"
+         alt="Deuxième création graphique">
+    <h3>Ma deuxième création</h3>
+</article>
+
+
+<article class="gallery-item">
+    <img src="affiche jpg 3.png"
+         alt="Deuxième création graphique">
+    <h3>Ma troisieme création</h3>
+</article>
+
+
+<article class="gallery-item">
+    <img src="affiche jpg 4.png"
+         alt="Deuxième création graphique">
+    <h3>Ma quatrieme création</h3>
+</article>
+
+
+<article class="gallery-item">
+    <img src="affiche jpg 5.png"
+         alt="Deuxième création graphique">
+    <h3>Ma cinquieme création</h3>
+</article>
+
+
+
+
+
+            
+
+            <!-- Ajoute tes autres créations ici -->
+
+        </section>
+    </main>
+
+
+    <!-- Fenêtre d'agrandissement -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightbox-close"
+                aria-label="Fermer l'image">
+            &times;
+        </button>
+
+        <img id="lightbox-image" src="" alt="">
+
+        <p id="lightbox-caption"></p>
+    </div>
+
+    <!-- Chargement du JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+  
